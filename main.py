@@ -70,8 +70,7 @@ class Auto:
 
 #Drive
     def drive(self):
-        if self.strengh>0 and
-            self.fuel>=self.consumption:
+        if self.strengh>0 and self.fuel>=self.consumption:
             self.fuel-=self.consumption
             self.strengh-=1
             return  True
@@ -118,10 +117,10 @@ def get_job(self):
 
 #Eat
 def eat(self):
-    if self.home.food <=0
+    if self.home.food <=0:
         self.shopping("food")
     else:
-        if self.satiety >=100
+        if self.satiety >=100:
             self.satiety = 100
             return
         self.satiety+=5
@@ -242,6 +241,22 @@ elif self.money<0:
 elif self.car.strenght<15:
     print("I need to repair my car")
     self.to_repair()
+
+#Don dice
+elif dice == 1:
+    print("Let's chill")
+    self.chill()
+elif dice == 2:
+    print("Start working")
+    self.work()
+elif dice == 3:
+    print("Cleaning time!")
+    self.clean_home()
+elif dice == 4:
+    print("Time for treats!")
+    self.shopping(manage="delicacies")
+
+#Object men
 
 
 
